@@ -35,10 +35,11 @@ dataset = IIDSimulation(W=weighted_random_dag, n=1000, method='nonlinear', sem_t
 true_dag, X = dataset.B, dataset.X
 
 anm = ANMNonlinear(alpha=0.05)
-anm.learn(data=X)
+anm.learn(data=X)  # X shape: (N, d)
+
+estimated_dag = anm.causal_matrix  # row variable -> column variable
 
 # plot predict_dag and true_dag
-GraphDAG(anm.causal_matrix, true_dag)
-mm = MetricsDAG(anm.causal_matrix, true_dag)
+GraphDAG(estimated_dag, true_dag)
+mm = MetricsDAG(estimated_dag, true_dag)
 print(mm.metrics)
-
