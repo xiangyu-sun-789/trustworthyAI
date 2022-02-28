@@ -3,14 +3,19 @@
 This repository aims to include trustworthy AI related projects from Huawei Noah's Ark Lab.  
 Current projects include:
 
+- gCastle (or pyCastle, pCastle)
+
+  The real datasets (id:10, 21, 22) used in [PCIC Causal Discovery Competition 2021 ](https://competition.huaweicloud.com/information/1000041487/introduction) have been released on the github: [temporary link](https://github.com/gcastle-hub/dataset).
+
 - Causal Structure Learning
 
 - Causal Disentangled Representation Learning
 
-- gCastle (or pyCastle, pCastle)
 
-  Welcome to participate in [PCIC Causal Discovery Competition 2021 ](https://competition.huaweicloud.com/information/1000041487/introduction)(June 8, 2021 ~ August 22, 2021).
-  gCastle offers the competition module to be convenient for you to generate the submission file and evaluate your methods, and you can visit the submission section of the      [competition website ](https://competition.huaweicloud.com/information/1000041487/circumstance) to get the toy example.
+### gCastle
+
+- This is a causal structure learning toolchain containing various functionality related to causal learning and evaluation. A tech report describing the toolbox is available [here](https://arxiv.org/abs/2111.15155).
+- The package offers a number of causal discovery algorithms, most of which are gradient-based, hence the name: **g**radient-based **Ca**usal **st**ructure **le**arning pipeline.
 
 ### Causal Structure Learning
 
@@ -29,8 +34,3 @@ Current projects include:
 - **CausalVAE**: code and datasets of the experimental results for the paper
  ['CausalVAE: Disentangled Representation Learning via Neural Structural Causal Models'](https://arxiv.org/pdf/2004.08697.pdf), CVPR, 2021. (accepted)
 - **Datasets**: code for generating synthetic datasets used in the paper.
-
-### gCastle
-
-- This is a causal structure learning toolchain, which contains various functionality related to causal learning and evaluation.
-- Most of causal discovery algorithms in gCastle are gradient-based, hence the name: **g**radient-based **Ca**usal **St**ructure **Le**arning pipeline.
